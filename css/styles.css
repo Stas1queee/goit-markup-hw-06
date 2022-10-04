@@ -210,6 +210,7 @@ li {
   letter-spacing: 00.03em;
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 /* modal window */
@@ -378,6 +379,7 @@ li {
   border-radius: 2px;
   margin-right: 8px;
   fill: var(--background-color-header);
+  
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -401,6 +403,8 @@ li {
   border-radius: 4px;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
 }
 
 .submit-btn:hover,
@@ -819,6 +823,7 @@ main .main {
   color: var(--background-color-header);
   background-color: var(--accent-color);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
 
 .subs-icon {
