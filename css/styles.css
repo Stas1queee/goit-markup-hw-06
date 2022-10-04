@@ -225,8 +225,7 @@ li {
   background-color: var(--modal-backdrop-color);
   z-index: 2;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -235,7 +234,7 @@ li {
 }
 
 .backdrop.is-hidden .modal {
-   transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.8);
 }
 .modal {
   position: absolute;
@@ -247,7 +246,6 @@ li {
 
   background-color: var(--background-color-header);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .close-btn {
   position: absolute;
@@ -265,6 +263,150 @@ li {
   border-radius: 50%;
 }
 
+
+.close-btn:hover svg {
+  fill:var(--accent-color)
+}
+
+/*  Form styles  */
+
+.modal-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: var(--secondary-text-color);
+}
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 448px;
+  height: 342px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
+}
+
+.field-input {
+  position: relative;
+  border: 0;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.text-area {
+  padding: 12px 16px;
+  min-width: 448px;
+  min-height: 120px;
+
+  resize: none;
+}
+
+.form-title {
+  text-align: left;
+
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-icon {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 12px;
+  top: 50%;
+  fill: var(--secondary-text-color);
+}
+
+.field-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.agree {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  text-align: center;
+  margin-left: 12px;
+
+  color: var(--primary-text-color);
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.agreement-link {
+  margin-left: 5px;
+
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: var(--background-color-header);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.submit-btn {
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--background-color-header);
+  border-radius: 4px;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* main styles */
 
 .main-list {
@@ -628,6 +770,63 @@ main .main {
 .footer .link-to:focus {
   color: var(--accent-color);
 }
+
+/* subs-box styles */
+
+.subs-box {
+  display: block;
+  margin-left: 93px;
+
+  width: 570px;
+  height: 86px;
+}
+
+.subs-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--background-color-header);
+}
+
+.subs-input {
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  color: var(--hero-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  outline: none;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subs-btn {
+  width: 200px;
+  height: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1px;
+
+  border-radius: 4px;
+
+  border-color: var(--accent-color);
+
+  color: var(--background-color-header);
+  background-color: var(--accent-color);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.subs-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 .no-scroll {
   overflow: hidden;
 }
