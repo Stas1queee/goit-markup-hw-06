@@ -378,8 +378,8 @@ li {
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
   margin-right: 8px;
-  fill: var(--background-color-header);
-  
+
+
 }
 
 .checkbox:checked + .checkbox-icon {
